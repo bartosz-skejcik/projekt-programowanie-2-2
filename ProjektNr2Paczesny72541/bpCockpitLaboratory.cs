@@ -5,11 +5,9 @@ public partial class bpCockpitLaboratory : Form
     public bpCockpitLaboratory()
     {
         InitializeComponent();
-        // Register the form closing event
-        this.FormClosing += BpCockpitLaboratory_FormClosing;
     }
 
-    private void BpCockpitLaboratory_FormClosing(object sender, FormClosingEventArgs e)
+    private void bpCockpitLaboratory_FormClosing(object sender, FormClosingEventArgs e)
     {
         // Show confirmation dialog
         DialogResult result = MessageBox.Show(

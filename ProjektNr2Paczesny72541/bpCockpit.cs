@@ -36,15 +36,17 @@ public partial class bpCockpit : Form
 
     private void bpBtnIndividual_Click(object sender, EventArgs e)
     {
-        // TODO: Implementacja logiki dla przycisku "Kokpit projektu Indywidualnego"
+        bpCockpitIndividual individualForm = new bpCockpitIndividual();
+        individualForm.Show();
+        
+        this.Hide();
     }
 
     private void bpBtnLaboratory_Click(object sender, EventArgs e)
     {
-        // Create and show the laboratory cockpit form
         bpCockpitLaboratory laboratoryForm = new bpCockpitLaboratory();
         laboratoryForm.Show();
-        // Hide this form to prevent multiple instances
+        
         this.Hide();
     }
 }
