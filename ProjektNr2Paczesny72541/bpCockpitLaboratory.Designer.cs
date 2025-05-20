@@ -115,9 +115,11 @@ partial class bpCockpitLaboratory
         // bpTBarBlockAngle
         // 
         bpTBarBlockAngle.Location = new System.Drawing.Point(11, 243);
+        bpTBarBlockAngle.Maximum = 360;
         bpTBarBlockAngle.Name = "bpTBarBlockAngle";
         bpTBarBlockAngle.Size = new System.Drawing.Size(116, 45);
         bpTBarBlockAngle.TabIndex = 11;
+        bpTBarBlockAngle.ValueChanged += bpTBarBlockAngle_ValueChanged;
         // 
         // bpTxtBlockAngle
         // 
@@ -156,6 +158,7 @@ partial class bpCockpitLaboratory
         bpTBarBlockRadius.Name = "bpTBarBlockRadius";
         bpTBarBlockRadius.Size = new System.Drawing.Size(116, 45);
         bpTBarBlockRadius.TabIndex = 5;
+        bpTBarBlockRadius.ValueChanged += bpTBarBlockRadius_ValueChanged;
         // 
         // bpTxtBlockRadius
         // 
@@ -179,6 +182,7 @@ partial class bpCockpitLaboratory
         bpTBarBlockHeight.Name = "bpTBarBlockHeight";
         bpTBarBlockHeight.Size = new System.Drawing.Size(116, 45);
         bpTBarBlockHeight.TabIndex = 2;
+        bpTBarBlockHeight.ValueChanged += bpTBarBlockHeight_ValueChanged;
         // 
         // bpTxtBlockHeight
         // 
@@ -253,6 +257,8 @@ partial class bpCockpitLaboratory
         // 
         // bpPictureBox
         // 
+        bpPictureBox.BackColor = System.Drawing.Color.White;
+        bpPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
         bpPictureBox.Location = new System.Drawing.Point(199, 14);
         bpPictureBox.Name = "bpPictureBox";
         bpPictureBox.Size = new System.Drawing.Size(726, 466);
