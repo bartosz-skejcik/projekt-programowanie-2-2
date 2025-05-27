@@ -8,10 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7a7f2d-683c-4d90-b01a-ddb6261d083d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ProjektNr2Paczesny72541.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ProjektNr2Paczesny72541.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProjektNr2Paczesny72541" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -99,6 +97,8 @@
       <workItem from="1747739010949" duration="2118000" />
       <workItem from="1747741161796" duration="543000" />
       <workItem from="1747745743022" duration="5420000" />
+      <workItem from="1748350105594" duration="2733000" />
+      <workItem from="1748361131903" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <option name="closed" value="true" />
