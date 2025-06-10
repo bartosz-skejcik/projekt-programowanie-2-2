@@ -10,6 +10,9 @@
     <list default="true" id="4f7a7f2d-683c-4d90-b01a-ddb6261d083d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Project.ProjektNr2Paczesny72541.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.ProjektNr2Paczesny72541.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -98,7 +101,14 @@
       <workItem from="1747741161796" duration="543000" />
       <workItem from="1747745743022" duration="5420000" />
       <workItem from="1748350105594" duration="2733000" />
-      <workItem from="1748361131903" duration="1160000" />
+      <workItem from="1748361131903" duration="1309000" />
+      <workItem from="1748955376505" duration="949000" />
+      <workItem from="1748963566609" duration="114000" />
+      <workItem from="1748963728065" duration="700000" />
+      <workItem from="1749555413810" duration="1101000" />
+      <workItem from="1749556553692" duration="781000" />
+      <workItem from="1749557363087" duration="632000" />
+      <workItem from="1749563245529" duration="847000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <option name="closed" value="true" />
@@ -108,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747741218249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chuj">
+      <option name="closed" value="true" />
+      <created>1748362332118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748362332118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="shit" />
+    <MESSAGE value="chuj" />
+    <option name="LAST_COMMIT_MESSAGE" value="chuj" />
   </component>
 </project>

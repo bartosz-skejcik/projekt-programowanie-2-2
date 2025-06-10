@@ -36,9 +36,9 @@ public partial class bpCockpit : Form
 
     private void bpBtnIndividual_Click(object sender, EventArgs e)
     {
-        bpCockpitIndividual individualForm = new bpCockpitIndividual();
-        individualForm.Show();
-        
+        bpCockpitIndividual cockpitIndividual = new bpCockpitIndividual();
+        cockpitIndividual.Show();
+
         this.Hide();
     }
 

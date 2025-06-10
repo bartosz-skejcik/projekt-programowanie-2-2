@@ -31,6 +31,7 @@ partial class bpCockpitLaboratory
     /// </summary>
     private void InitializeComponent()
     {
+        components = new System.ComponentModel.Container();
         bpGrBoxBlockList = new System.Windows.Forms.GroupBox();
         bpCBoxBlockType = new System.Windows.Forms.ComboBox();
         bpGrBoxGeometricAttrs = new System.Windows.Forms.GroupBox();
@@ -60,6 +61,22 @@ partial class bpCockpitLaboratory
         bpGrBoxBlockOrdering = new System.Windows.Forms.GroupBox();
         bpRBtnBlockOrderDecreasing = new System.Windows.Forms.RadioButton();
         bpRBtnBlockOrderIncreasing = new System.Windows.Forms.RadioButton();
+        timer1 = new System.Windows.Forms.Timer(components);
+        timer2 = new System.Windows.Forms.Timer(components);
+        bpBtnRemoveFirstAddedBlock = new System.Windows.Forms.Button();
+        bpBtnRemoveRecentBlock = new System.Windows.Forms.Button();
+        bpBtnRemoveSelectedBlock = new System.Windows.Forms.Button();
+        label6 = new System.Windows.Forms.Label();
+        bpTxtSelectedBlock = new System.Windows.Forms.TextBox();
+        bpGrBoxSlides = new System.Windows.Forms.GroupBox();
+        bpRadioClock = new System.Windows.Forms.RadioButton();
+        bpRadioButton = new System.Windows.Forms.RadioButton();
+        bpBtnTurnOnSlider = new System.Windows.Forms.Button();
+        label7 = new System.Windows.Forms.Label();
+        bpTxtBlockNumber = new System.Windows.Forms.TextBox();
+        bpBtnNext = new System.Windows.Forms.Button();
+        bpBtnPrevious = new System.Windows.Forms.Button();
+        bpBtnTurnOffSlider = new System.Windows.Forms.Button();
         bpGrBoxBlockList.SuspendLayout();
         bpGrBoxGeometricAttrs.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)bpTBarBlockAngle).BeginInit();
@@ -71,6 +88,7 @@ partial class bpCockpitLaboratory
         ((System.ComponentModel.ISupportInitialize)bpPictureBox).BeginInit();
         bpGrBoxBlockVisibilityCriteria.SuspendLayout();
         bpGrBoxBlockOrdering.SuspendLayout();
+        bpGrBoxSlides.SuspendLayout();
         SuspendLayout();
         // 
         // bpGrBoxBlockList
@@ -209,7 +227,7 @@ partial class bpCockpitLaboratory
         bpGrBoxGraphicAttrs.Controls.Add(bpBtnBlockLineColor);
         bpGrBoxGraphicAttrs.Location = new System.Drawing.Point(8, 376);
         bpGrBoxGraphicAttrs.Name = "bpGrBoxGraphicAttrs";
-        bpGrBoxGraphicAttrs.Size = new System.Drawing.Size(185, 167);
+        bpGrBoxGraphicAttrs.Size = new System.Drawing.Size(185, 189);
         bpGrBoxGraphicAttrs.TabIndex = 1;
         bpGrBoxGraphicAttrs.TabStop = false;
         bpGrBoxGraphicAttrs.Text = "Atrybuty graficzne";
@@ -259,27 +277,29 @@ partial class bpCockpitLaboratory
         // 
         bpPictureBox.BackColor = System.Drawing.Color.White;
         bpPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-        bpPictureBox.Location = new System.Drawing.Point(199, 14);
+        bpPictureBox.Location = new System.Drawing.Point(210, 36);
         bpPictureBox.Name = "bpPictureBox";
         bpPictureBox.Size = new System.Drawing.Size(726, 466);
         bpPictureBox.TabIndex = 2;
         bpPictureBox.TabStop = false;
+        bpPictureBox.MouseClick += bpPictureBox_MouseClick;
         // 
         // bpBtnAddSelectedBlock
         // 
-        bpBtnAddSelectedBlock.Location = new System.Drawing.Point(199, 486);
+        bpBtnAddSelectedBlock.Location = new System.Drawing.Point(210, 508);
         bpBtnAddSelectedBlock.Name = "bpBtnAddSelectedBlock";
         bpBtnAddSelectedBlock.Size = new System.Drawing.Size(166, 57);
         bpBtnAddSelectedBlock.TabIndex = 3;
         bpBtnAddSelectedBlock.Text = "Dodaj wybraną bryłę";
         bpBtnAddSelectedBlock.UseVisualStyleBackColor = true;
+        bpBtnAddSelectedBlock.Click += bpBtnAddSelectedBlock_Click;
         // 
         // bpGrBoxBlockVisibilityCriteria
         // 
         bpGrBoxBlockVisibilityCriteria.Controls.Add(bpRBtnBlockSurfaceArea);
         bpGrBoxBlockVisibilityCriteria.Controls.Add(bpRBtnBlockVolume);
         bpGrBoxBlockVisibilityCriteria.Controls.Add(bpRBtnBlockHeight);
-        bpGrBoxBlockVisibilityCriteria.Location = new System.Drawing.Point(371, 486);
+        bpGrBoxBlockVisibilityCriteria.Location = new System.Drawing.Point(382, 508);
         bpGrBoxBlockVisibilityCriteria.Name = "bpGrBoxBlockVisibilityCriteria";
         bpGrBoxBlockVisibilityCriteria.Size = new System.Drawing.Size(363, 57);
         bpGrBoxBlockVisibilityCriteria.TabIndex = 4;
@@ -320,7 +340,7 @@ partial class bpCockpitLaboratory
         // 
         bpGrBoxBlockOrdering.Controls.Add(bpRBtnBlockOrderDecreasing);
         bpGrBoxBlockOrdering.Controls.Add(bpRBtnBlockOrderIncreasing);
-        bpGrBoxBlockOrdering.Location = new System.Drawing.Point(743, 486);
+        bpGrBoxBlockOrdering.Location = new System.Drawing.Point(754, 508);
         bpGrBoxBlockOrdering.Name = "bpGrBoxBlockOrdering";
         bpGrBoxBlockOrdering.Size = new System.Drawing.Size(182, 57);
         bpGrBoxBlockOrdering.TabIndex = 5;
@@ -347,11 +367,160 @@ partial class bpCockpitLaboratory
         bpRBtnBlockOrderIncreasing.Text = "Rosnąco";
         bpRBtnBlockOrderIncreasing.UseVisualStyleBackColor = true;
         // 
+        // timer1
+        // 
+        timer1.Tick += timer1_Tick;
+        // 
+        // timer2
+        // 
+        timer2.Interval = 300;
+        timer2.Tick += timer2_Tick;
+        // 
+        // bpBtnRemoveFirstAddedBlock
+        // 
+        bpBtnRemoveFirstAddedBlock.Location = new System.Drawing.Point(210, 7);
+        bpBtnRemoveFirstAddedBlock.Name = "bpBtnRemoveFirstAddedBlock";
+        bpBtnRemoveFirstAddedBlock.Size = new System.Drawing.Size(166, 23);
+        bpBtnRemoveFirstAddedBlock.TabIndex = 6;
+        bpBtnRemoveFirstAddedBlock.Text = "Usuń pierwszą dodaną bryłę";
+        bpBtnRemoveFirstAddedBlock.UseVisualStyleBackColor = true;
+        // 
+        // bpBtnRemoveRecentBlock
+        // 
+        bpBtnRemoveRecentBlock.Location = new System.Drawing.Point(382, 7);
+        bpBtnRemoveRecentBlock.Name = "bpBtnRemoveRecentBlock";
+        bpBtnRemoveRecentBlock.Size = new System.Drawing.Size(166, 23);
+        bpBtnRemoveRecentBlock.TabIndex = 7;
+        bpBtnRemoveRecentBlock.Text = "Usuń ostatnio dodaną bryłę";
+        bpBtnRemoveRecentBlock.UseVisualStyleBackColor = true;
+        // 
+        // bpBtnRemoveSelectedBlock
+        // 
+        bpBtnRemoveSelectedBlock.Location = new System.Drawing.Point(554, 7);
+        bpBtnRemoveSelectedBlock.Name = "bpBtnRemoveSelectedBlock";
+        bpBtnRemoveSelectedBlock.Size = new System.Drawing.Size(166, 23);
+        bpBtnRemoveSelectedBlock.TabIndex = 8;
+        bpBtnRemoveSelectedBlock.Text = "Usuń wybraną bryłę";
+        bpBtnRemoveSelectedBlock.UseVisualStyleBackColor = true;
+        // 
+        // label6
+        // 
+        label6.Font = new System.Drawing.Font("Segoe UI", 10F);
+        label6.Location = new System.Drawing.Point(726, 7);
+        label6.Name = "label6";
+        label6.Size = new System.Drawing.Size(112, 23);
+        label6.TabIndex = 9;
+        label6.Text = "Wybrana bryła";
+        label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // bpTxtSelectedBlock
+        // 
+        bpTxtSelectedBlock.Location = new System.Drawing.Point(836, 7);
+        bpTxtSelectedBlock.Name = "bpTxtSelectedBlock";
+        bpTxtSelectedBlock.Size = new System.Drawing.Size(100, 23);
+        bpTxtSelectedBlock.TabIndex = 10;
+        // 
+        // bpGrBoxSlides
+        // 
+        bpGrBoxSlides.Controls.Add(bpRadioButton);
+        bpGrBoxSlides.Controls.Add(bpRadioClock);
+        bpGrBoxSlides.Location = new System.Drawing.Point(942, 7);
+        bpGrBoxSlides.Name = "bpGrBoxSlides";
+        bpGrBoxSlides.Size = new System.Drawing.Size(173, 87);
+        bpGrBoxSlides.TabIndex = 11;
+        bpGrBoxSlides.TabStop = false;
+        bpGrBoxSlides.Text = "Pokaz slajdów";
+        // 
+        // bpRadioClock
+        // 
+        bpRadioClock.Location = new System.Drawing.Point(10, 22);
+        bpRadioClock.Name = "bpRadioClock";
+        bpRadioClock.Size = new System.Drawing.Size(104, 24);
+        bpRadioClock.TabIndex = 0;
+        bpRadioClock.TabStop = true;
+        bpRadioClock.Text = "Zegarowy";
+        bpRadioClock.UseVisualStyleBackColor = true;
+        // 
+        // bpRadioButton
+        // 
+        bpRadioButton.Location = new System.Drawing.Point(10, 52);
+        bpRadioButton.Name = "bpRadioButton";
+        bpRadioButton.Size = new System.Drawing.Size(104, 24);
+        bpRadioButton.TabIndex = 1;
+        bpRadioButton.TabStop = true;
+        bpRadioButton.Text = "Przyciskowy";
+        bpRadioButton.UseVisualStyleBackColor = true;
+        // 
+        // bpBtnTurnOnSlider
+        // 
+        bpBtnTurnOnSlider.Location = new System.Drawing.Point(942, 100);
+        bpBtnTurnOnSlider.Name = "bpBtnTurnOnSlider";
+        bpBtnTurnOnSlider.Size = new System.Drawing.Size(173, 23);
+        bpBtnTurnOnSlider.TabIndex = 12;
+        bpBtnTurnOnSlider.Text = "Włącz slider pokazu";
+        bpBtnTurnOnSlider.UseVisualStyleBackColor = true;
+        // 
+        // label7
+        // 
+        label7.Font = new System.Drawing.Font("Segoe UI", 10F);
+        label7.Location = new System.Drawing.Point(944, 126);
+        label7.Name = "label7";
+        label7.Size = new System.Drawing.Size(112, 23);
+        label7.TabIndex = 13;
+        label7.Text = "Numer bryły";
+        label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        // 
+        // bpTxtBlockNumber
+        // 
+        bpTxtBlockNumber.Location = new System.Drawing.Point(942, 160);
+        bpTxtBlockNumber.Name = "bpTxtBlockNumber";
+        bpTxtBlockNumber.Size = new System.Drawing.Size(173, 23);
+        bpTxtBlockNumber.TabIndex = 14;
+        // 
+        // bpBtnNext
+        // 
+        bpBtnNext.Location = new System.Drawing.Point(944, 189);
+        bpBtnNext.Name = "bpBtnNext";
+        bpBtnNext.Size = new System.Drawing.Size(75, 23);
+        bpBtnNext.TabIndex = 15;
+        bpBtnNext.Text = "Następny";
+        bpBtnNext.UseVisualStyleBackColor = true;
+        // 
+        // bpBtnPrevious
+        // 
+        bpBtnPrevious.Location = new System.Drawing.Point(1040, 189);
+        bpBtnPrevious.Name = "bpBtnPrevious";
+        bpBtnPrevious.Size = new System.Drawing.Size(75, 23);
+        bpBtnPrevious.TabIndex = 16;
+        bpBtnPrevious.Text = "Poprzedni";
+        bpBtnPrevious.UseVisualStyleBackColor = true;
+        // 
+        // bpBtnTurnOffSlider
+        // 
+        bpBtnTurnOffSlider.Location = new System.Drawing.Point(942, 218);
+        bpBtnTurnOffSlider.Name = "bpBtnTurnOffSlider";
+        bpBtnTurnOffSlider.Size = new System.Drawing.Size(173, 23);
+        bpBtnTurnOffSlider.TabIndex = 17;
+        bpBtnTurnOffSlider.Text = "Wyłącz slider pokazu";
+        bpBtnTurnOffSlider.UseVisualStyleBackColor = true;
+        // 
         // bpCockpitLaboratory
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(935, 550);
+        ClientSize = new System.Drawing.Size(1123, 574);
+        Controls.Add(bpBtnTurnOffSlider);
+        Controls.Add(bpBtnPrevious);
+        Controls.Add(bpBtnNext);
+        Controls.Add(bpTxtBlockNumber);
+        Controls.Add(label7);
+        Controls.Add(bpBtnTurnOnSlider);
+        Controls.Add(bpGrBoxSlides);
+        Controls.Add(bpTxtSelectedBlock);
+        Controls.Add(label6);
+        Controls.Add(bpBtnRemoveSelectedBlock);
+        Controls.Add(bpBtnRemoveRecentBlock);
+        Controls.Add(bpBtnRemoveFirstAddedBlock);
         Controls.Add(bpGrBoxBlockOrdering);
         Controls.Add(bpGrBoxBlockVisibilityCriteria);
         Controls.Add(bpBtnAddSelectedBlock);
@@ -374,8 +543,41 @@ partial class bpCockpitLaboratory
         ((System.ComponentModel.ISupportInitialize)bpPictureBox).EndInit();
         bpGrBoxBlockVisibilityCriteria.ResumeLayout(false);
         bpGrBoxBlockOrdering.ResumeLayout(false);
+        bpGrBoxSlides.ResumeLayout(false);
         ResumeLayout(false);
+        PerformLayout();
     }
+
+    private System.Windows.Forms.Button bpBtnTurnOffSlider;
+
+    private System.Windows.Forms.Button bpBtnNext;
+    private System.Windows.Forms.Button bpBtnPrevious;
+
+    private System.Windows.Forms.TextBox bpTxtBlockNumber;
+
+    private System.Windows.Forms.Label label7;
+
+    private System.Windows.Forms.Button bpBtnTurnOnSlider;
+
+    private System.Windows.Forms.GroupBox bpGrBoxSlides;
+
+    private System.Windows.Forms.RadioButton bpRadioButton;
+    
+    private System.Windows.Forms.RadioButton bpRadioClock;
+
+    private System.Windows.Forms.GroupBox Zegar;
+
+    private System.Windows.Forms.TextBox bpTxtSelectedBlock;
+
+    private System.Windows.Forms.Button bpBtnRemoveSelectedBlock;
+    private System.Windows.Forms.Label label6;
+
+    private System.Windows.Forms.Button bpBtnRemoveFirstAddedBlock;
+    private System.Windows.Forms.Button bpBtnRemoveRecentBlock;
+
+    private System.Windows.Forms.Timer timer2;
+
+    private System.Windows.Forms.Timer timer1;
 
     private System.Windows.Forms.RadioButton bpRBtnBlockSurfaceArea;
 
