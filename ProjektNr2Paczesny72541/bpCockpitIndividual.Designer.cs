@@ -530,7 +530,7 @@
             Controls.Add(bpBtnMoveLeft);
             Controls.Add(bpBtnMoveRight);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Text = "Projekt Indywidualny Nr 2 - bartosz Paczesny 72541";
+            Text = "Projekt Indywidualny Nr 2 - Bartłomiej Paczesny 72541";
             FormClosing += bpCockpitIndividual_FormClosing;
             Load += bpCockpitIndividual_Load;
             ((System.ComponentModel.ISupportInitialize)bpPictureBox).EndInit();

@@ -225,7 +225,7 @@ public partial class bpCockpitLaboratory : Form
 
     /*
     ==========================================================================================================
-    SAMOOCENA PROJEKTU LABORATORYJNEGO - bartosz Paczesny 72541
+    SAMOOCENA PROJEKTU LABORATORYJNEGO - Bartłomiej Paczesny 72541
     ==========================================================================================================
 
     📊 OCENA IMPLEMENTACJI FUNKCJONALNOŚCI:
