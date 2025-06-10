@@ -80,9 +80,9 @@
             bpGrBoxRotation.SuspendLayout();
             bpGrBoxSlider.SuspendLayout();
             SuspendLayout();
-            // 
+            //
             // bpPictureBox
-            // 
+            //
             bpPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             bpPictureBox.Location = new System.Drawing.Point(313, 14);
             bpPictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -92,9 +92,9 @@
             bpPictureBox.TabStop = false;
             bpPictureBox.Paint += bpPictureBox_Paint;
             bpPictureBox.MouseClick += bpPictureBox_MouseClick;
-            // 
+            //
             // bpGrBoxBlockCreation
-            // 
+            //
             bpGrBoxBlockCreation.Controls.Add(bpBtnAddBlock);
             bpGrBoxBlockCreation.Controls.Add(bpCBoxBlockType);
             bpGrBoxBlockCreation.Controls.Add(label1);
@@ -106,9 +106,9 @@
             bpGrBoxBlockCreation.TabIndex = 1;
             bpGrBoxBlockCreation.TabStop = false;
             bpGrBoxBlockCreation.Text = "Nowa bryła";
-            // 
+            //
             // bpBtnAddBlock
-            // 
+            //
             bpBtnAddBlock.Location = new System.Drawing.Point(69, 61);
             bpBtnAddBlock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnAddBlock.Name = "bpBtnAddBlock";
@@ -117,9 +117,9 @@
             bpBtnAddBlock.Text = "Dodaj nową bryłę";
             bpBtnAddBlock.UseVisualStyleBackColor = true;
             bpBtnAddBlock.Click += bpBtnAddBlock_Click;
-            // 
+            //
             // bpCBoxBlockType
-            // 
+            //
             bpCBoxBlockType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             bpCBoxBlockType.FormattingEnabled = true;
             bpCBoxBlockType.Location = new System.Drawing.Point(107, 30);
@@ -127,9 +127,9 @@
             bpCBoxBlockType.Name = "bpCBoxBlockType";
             bpCBoxBlockType.Size = new System.Drawing.Size(177, 23);
             bpCBoxBlockType.TabIndex = 1;
-            // 
+            //
             // label1
-            // 
+            //
             label1.AutoSize = true;
             label1.Location = new System.Drawing.Point(7, 33);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -137,9 +137,9 @@
             label1.Size = new System.Drawing.Size(78, 15);
             label1.TabIndex = 0;
             label1.Text = "Wybierz bryłę";
-            // 
+            //
             // bpGrBoxGeometricAttributes
-            // 
+            //
             bpGrBoxGeometricAttributes.Controls.Add(bpTxtBlockSlant);
             bpGrBoxGeometricAttributes.Controls.Add(label6);
             bpGrBoxGeometricAttributes.Controls.Add(bpTBarBlockSlant);
@@ -157,18 +157,18 @@
             bpGrBoxGeometricAttributes.TabIndex = 2;
             bpGrBoxGeometricAttributes.TabStop = false;
             bpGrBoxGeometricAttributes.Text = "Atrybuty geometryczne";
-            // 
+            //
             // bpTxtBlockSlant
-            // 
+            //
             bpTxtBlockSlant.Location = new System.Drawing.Point(236, 143);
             bpTxtBlockSlant.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTxtBlockSlant.Name = "bpTxtBlockSlant";
             bpTxtBlockSlant.ReadOnly = true;
             bpTxtBlockSlant.Size = new System.Drawing.Size(48, 23);
             bpTxtBlockSlant.TabIndex = 8;
-            // 
+            //
             // label6
-            // 
+            //
             label6.AutoSize = true;
             label6.Location = new System.Drawing.Point(7, 147);
             label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -176,9 +176,9 @@
             label6.Size = new System.Drawing.Size(65, 15);
             label6.TabIndex = 7;
             label6.Text = "Pochylenie";
-            // 
+            //
             // bpTBarBlockSlant
-            // 
+            //
             bpTBarBlockSlant.Location = new System.Drawing.Point(83, 143);
             bpTBarBlockSlant.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTBarBlockSlant.Maximum = 50;
@@ -187,18 +187,18 @@
             bpTBarBlockSlant.Size = new System.Drawing.Size(146, 45);
             bpTBarBlockSlant.TabIndex = 6;
             bpTBarBlockSlant.Scroll += bpTBarBlockSlant_Scroll;
-            // 
+            //
             // bpTxtBlockRadius
-            // 
+            //
             bpTxtBlockRadius.Location = new System.Drawing.Point(236, 88);
             bpTxtBlockRadius.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTxtBlockRadius.Name = "bpTxtBlockRadius";
             bpTxtBlockRadius.ReadOnly = true;
             bpTxtBlockRadius.Size = new System.Drawing.Size(48, 23);
             bpTxtBlockRadius.TabIndex = 5;
-            // 
+            //
             // label3
-            // 
+            //
             label3.AutoSize = true;
             label3.Location = new System.Drawing.Point(7, 91);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -206,9 +206,9 @@
             label3.Size = new System.Drawing.Size(52, 15);
             label3.TabIndex = 4;
             label3.Text = "Promień";
-            // 
+            //
             // bpTBarBlockRadius
-            // 
+            //
             bpTBarBlockRadius.Location = new System.Drawing.Point(83, 88);
             bpTBarBlockRadius.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTBarBlockRadius.Maximum = 200;
@@ -218,18 +218,18 @@
             bpTBarBlockRadius.TabIndex = 3;
             bpTBarBlockRadius.Value = 50;
             bpTBarBlockRadius.Scroll += bpTBarBlockRadius_Scroll;
-            // 
+            //
             // bpTxtBlockHeight
-            // 
+            //
             bpTxtBlockHeight.Location = new System.Drawing.Point(236, 32);
             bpTxtBlockHeight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTxtBlockHeight.Name = "bpTxtBlockHeight";
             bpTxtBlockHeight.ReadOnly = true;
             bpTxtBlockHeight.Size = new System.Drawing.Size(48, 23);
             bpTxtBlockHeight.TabIndex = 2;
-            // 
+            //
             // label2
-            // 
+            //
             label2.AutoSize = true;
             label2.Location = new System.Drawing.Point(7, 36);
             label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -237,9 +237,9 @@
             label2.Size = new System.Drawing.Size(60, 15);
             label2.TabIndex = 1;
             label2.Text = "Wysokość";
-            // 
+            //
             // bpTBarBlockHeight
-            // 
+            //
             bpTBarBlockHeight.Location = new System.Drawing.Point(83, 32);
             bpTBarBlockHeight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTBarBlockHeight.Maximum = 300;
@@ -249,9 +249,9 @@
             bpTBarBlockHeight.TabIndex = 0;
             bpTBarBlockHeight.Value = 100;
             bpTBarBlockHeight.Scroll += bpTBarBlockHeight_Scroll;
-            // 
+            //
             // bpGrBoxGraphicAttributes
-            // 
+            //
             bpGrBoxGraphicAttributes.Controls.Add(bpNumUpDownLineWidth);
             bpGrBoxGraphicAttributes.Controls.Add(label5);
             bpGrBoxGraphicAttributes.Controls.Add(bpCBoxLineStyle);
@@ -265,9 +265,9 @@
             bpGrBoxGraphicAttributes.TabIndex = 3;
             bpGrBoxGraphicAttributes.TabStop = false;
             bpGrBoxGraphicAttributes.Text = "Atrybuty graficzne";
-            // 
+            //
             // bpNumUpDownLineWidth
-            // 
+            //
             bpNumUpDownLineWidth.Location = new System.Drawing.Point(107, 95);
             bpNumUpDownLineWidth.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpNumUpDownLineWidth.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
@@ -277,9 +277,9 @@
             bpNumUpDownLineWidth.TabIndex = 4;
             bpNumUpDownLineWidth.Value = new decimal(new int[] { 1, 0, 0, 0 });
             bpNumUpDownLineWidth.ValueChanged += bpNumUpDownLineWidth_ValueChanged;
-            // 
+            //
             // label5
-            // 
+            //
             label5.AutoSize = true;
             label5.Location = new System.Drawing.Point(8, 97);
             label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -287,9 +287,9 @@
             label5.Size = new System.Drawing.Size(73, 15);
             label5.TabIndex = 3;
             label5.Text = "Grubość linii";
-            // 
+            //
             // bpCBoxLineStyle
-            // 
+            //
             bpCBoxLineStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             bpCBoxLineStyle.FormattingEnabled = true;
             bpCBoxLineStyle.Location = new System.Drawing.Point(107, 61);
@@ -298,9 +298,9 @@
             bpCBoxLineStyle.Size = new System.Drawing.Size(140, 23);
             bpCBoxLineStyle.TabIndex = 2;
             bpCBoxLineStyle.SelectedIndexChanged += bpCBoxLineStyle_SelectedIndexChanged;
-            // 
+            //
             // label4
-            // 
+            //
             label4.AutoSize = true;
             label4.Location = new System.Drawing.Point(8, 65);
             label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -308,9 +308,9 @@
             label4.Size = new System.Drawing.Size(51, 15);
             label4.TabIndex = 1;
             label4.Text = "Styl Linii";
-            // 
+            //
             // bpBtnLineColor
-            // 
+            //
             bpBtnLineColor.Location = new System.Drawing.Point(10, 27);
             bpBtnLineColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnLineColor.Name = "bpBtnLineColor";
@@ -319,9 +319,9 @@
             bpBtnLineColor.Text = "Zmień kolor linii";
             bpBtnLineColor.UseVisualStyleBackColor = true;
             bpBtnLineColor.Click += bpBtnLineColor_Click;
-            // 
+            //
             // bpGrBoxRotation
-            // 
+            //
             bpGrBoxRotation.Controls.Add(bpChkEnableAutoRotation);
             bpGrBoxRotation.Controls.Add(bpBtnRotateRight);
             bpGrBoxRotation.Controls.Add(bpBtnRotateLeft);
@@ -333,9 +333,9 @@
             bpGrBoxRotation.TabIndex = 4;
             bpGrBoxRotation.TabStop = false;
             bpGrBoxRotation.Text = "Obracanie bryły";
-            // 
+            //
             // bpChkEnableAutoRotation
-            // 
+            //
             bpChkEnableAutoRotation.AutoSize = true;
             bpChkEnableAutoRotation.Location = new System.Drawing.Point(69, 61);
             bpChkEnableAutoRotation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -345,9 +345,9 @@
             bpChkEnableAutoRotation.Text = "Automatyczny obrót";
             bpChkEnableAutoRotation.UseVisualStyleBackColor = true;
             bpChkEnableAutoRotation.CheckedChanged += bpChkEnableAutoRotation_CheckedChanged;
-            // 
+            //
             // bpBtnRotateRight
-            // 
+            //
             bpBtnRotateRight.Location = new System.Drawing.Point(152, 28);
             bpBtnRotateRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnRotateRight.Name = "bpBtnRotateRight";
@@ -356,9 +356,9 @@
             bpBtnRotateRight.Text = "Obróć w prawo";
             bpBtnRotateRight.UseVisualStyleBackColor = true;
             bpBtnRotateRight.Click += bpBtnRotateRight_Click;
-            // 
+            //
             // bpBtnRotateLeft
-            // 
+            //
             bpBtnRotateLeft.Location = new System.Drawing.Point(33, 28);
             bpBtnRotateLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnRotateLeft.Name = "bpBtnRotateLeft";
@@ -367,9 +367,9 @@
             bpBtnRotateLeft.Text = "Obróć w lewo";
             bpBtnRotateLeft.UseVisualStyleBackColor = true;
             bpBtnRotateLeft.Click += bpBtnRotateLeft_Click;
-            // 
+            //
             // bpGrBoxSlider
-            // 
+            //
             bpGrBoxSlider.Controls.Add(bpLblCurrentBlockInfo);
             bpGrBoxSlider.Controls.Add(bpChkEnableSlider);
             bpGrBoxSlider.Controls.Add(bpBtnNext);
@@ -382,9 +382,9 @@
             bpGrBoxSlider.TabIndex = 5;
             bpGrBoxSlider.TabStop = false;
             bpGrBoxSlider.Text = "Przeglądanie brył (slider)";
-            // 
+            //
             // bpLblCurrentBlockInfo
-            // 
+            //
             bpLblCurrentBlockInfo.AutoSize = true;
             bpLblCurrentBlockInfo.Location = new System.Drawing.Point(114, 33);
             bpLblCurrentBlockInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -392,9 +392,9 @@
             bpLblCurrentBlockInfo.Size = new System.Drawing.Size(56, 15);
             bpLblCurrentBlockInfo.TabIndex = 3;
             bpLblCurrentBlockInfo.Text = "Bryła: 0/0";
-            // 
+            //
             // bpChkEnableSlider
-            // 
+            //
             bpChkEnableSlider.AutoSize = true;
             bpChkEnableSlider.Location = new System.Drawing.Point(72, 62);
             bpChkEnableSlider.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -404,9 +404,9 @@
             bpChkEnableSlider.Text = "Automatyczny pokaz";
             bpChkEnableSlider.UseVisualStyleBackColor = true;
             bpChkEnableSlider.CheckedChanged += bpChkEnableSlider_CheckedChanged;
-            // 
+            //
             // bpBtnNext
-            // 
+            //
             bpBtnNext.Location = new System.Drawing.Point(195, 28);
             bpBtnNext.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnNext.Name = "bpBtnNext";
@@ -415,9 +415,9 @@
             bpBtnNext.Text = "Następny";
             bpBtnNext.UseVisualStyleBackColor = true;
             bpBtnNext.Click += bpBtnNext_Click;
-            // 
+            //
             // bpBtnPrevious
-            // 
+            //
             bpBtnPrevious.Location = new System.Drawing.Point(10, 28);
             bpBtnPrevious.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnPrevious.Name = "bpBtnPrevious";
@@ -426,9 +426,9 @@
             bpBtnPrevious.Text = "Poprzedni";
             bpBtnPrevious.UseVisualStyleBackColor = true;
             bpBtnPrevious.Click += bpBtnPrevious_Click;
-            // 
+            //
             // bpBtnDeleteBlock
-            // 
+            //
             bpBtnDeleteBlock.Location = new System.Drawing.Point(72, 718);
             bpBtnDeleteBlock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnDeleteBlock.Name = "bpBtnDeleteBlock";
@@ -437,19 +437,19 @@
             bpBtnDeleteBlock.Text = "Usuń aktywną bryłę";
             bpBtnDeleteBlock.UseVisualStyleBackColor = true;
             bpBtnDeleteBlock.Click += bpBtnDeleteBlock_Click;
-            // 
+            //
             // bpRotationTimer
-            // 
+            //
             bpRotationTimer.Interval = 50;
             bpRotationTimer.Tick += bpRotationTimer_Tick;
-            // 
+            //
             // bpSliderTimer
-            // 
+            //
             bpSliderTimer.Interval = 1000;
             bpSliderTimer.Tick += bpSliderTimer_Tick;
-            // 
+            //
             // bpLblBlockInfo
-            // 
+            //
             bpLblBlockInfo.AutoSize = true;
             bpLblBlockInfo.Location = new System.Drawing.Point(14, 681);
             bpLblBlockInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -457,18 +457,18 @@
             bpLblBlockInfo.Size = new System.Drawing.Size(117, 15);
             bpLblBlockInfo.TabIndex = 7;
             bpLblBlockInfo.Text = "Info o aktywnej bryle";
-            // 
+            //
             // bpTxtBlockInfo
-            // 
+            //
             bpTxtBlockInfo.Location = new System.Drawing.Point(132, 677);
             bpTxtBlockInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpTxtBlockInfo.Name = "bpTxtBlockInfo";
             bpTxtBlockInfo.ReadOnly = true;
             bpTxtBlockInfo.Size = new System.Drawing.Size(173, 23);
             bpTxtBlockInfo.TabIndex = 8;
-            // 
+            //
             // bpBtnMoveUp
-            // 
+            //
             bpBtnMoveUp.Location = new System.Drawing.Point(313, 755);
             bpBtnMoveUp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnMoveUp.Name = "bpBtnMoveUp";
@@ -477,9 +477,9 @@
             bpBtnMoveUp.Text = "Up";
             bpBtnMoveUp.UseVisualStyleBackColor = true;
             bpBtnMoveUp.Click += bpBtnMoveUp_Click;
-            // 
+            //
             // bpBtnMoveDown
-            // 
+            //
             bpBtnMoveDown.Location = new System.Drawing.Point(409, 755);
             bpBtnMoveDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnMoveDown.Name = "bpBtnMoveDown";
@@ -488,9 +488,9 @@
             bpBtnMoveDown.Text = "Down";
             bpBtnMoveDown.UseVisualStyleBackColor = true;
             bpBtnMoveDown.Click += bpBtnMoveDown_Click;
-            // 
+            //
             // bpBtnMoveLeft
-            // 
+            //
             bpBtnMoveLeft.Location = new System.Drawing.Point(505, 755);
             bpBtnMoveLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnMoveLeft.Name = "bpBtnMoveLeft";
@@ -499,9 +499,9 @@
             bpBtnMoveLeft.Text = "Left";
             bpBtnMoveLeft.UseVisualStyleBackColor = true;
             bpBtnMoveLeft.Click += bpBtnMoveLeft_Click;
-            // 
+            //
             // bpBtnMoveRight
-            // 
+            //
             bpBtnMoveRight.Location = new System.Drawing.Point(601, 755);
             bpBtnMoveRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             bpBtnMoveRight.Name = "bpBtnMoveRight";
@@ -510,9 +510,9 @@
             bpBtnMoveRight.Text = "Right";
             bpBtnMoveRight.UseVisualStyleBackColor = true;
             bpBtnMoveRight.Click += bpBtnMoveRight_Click;
-            // 
+            //
             // bpCockpitIndividual
-            // 
+            //
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1148, 788);
@@ -530,7 +530,7 @@
             Controls.Add(bpBtnMoveLeft);
             Controls.Add(bpBtnMoveRight);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            Text = "Projekt Indywidualny Nr 2 - Bartłomiej Paczesny 72541";
+            Text = "Projekt Indywidualny Nr 2 - bartosz Paczesny 72541";
             FormClosing += bpCockpitIndividual_FormClosing;
             Load += bpCockpitIndividual_Load;
             ((System.ComponentModel.ISupportInitialize)bpPictureBox).EndInit();

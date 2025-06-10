@@ -424,7 +424,7 @@ namespace ProjektNr2Paczesny72541
 
     /*
     ==========================================================================================================
-    SAMOOCENA PROJEKTU INDYWIDUALNEGO - Bartłomiej Paczesny 72541
+    SAMOOCENA PROJEKTU INDYWIDUALNEGO - bartosz Paczesny 72541
     ==========================================================================================================
 
     📊 OCENA IMPLEMENTACJI FUNKCJONALNOŚCI:
