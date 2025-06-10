@@ -22,9 +22,9 @@ GraniastosłupProsty,
     {
         public int XsP { get; protected set; }
         public int YsP { get; protected set; }
-        public Color LineColor { get; protected set; }
-        public DashStyle LineStyle { get; protected set; }
-        public float LineWidth { get; protected set; }
+        public Color LineColor { get; set; }
+        public DashStyle LineStyle { get; set; }
+        public float LineWidth { get; set; }
         public bool Visible { get; set; }
         protected float _currentRotationAngle = 0f; // Added for rotation (degrees)
 

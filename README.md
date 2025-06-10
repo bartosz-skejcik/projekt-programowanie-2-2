@@ -1,6 +1,6 @@
 # Projekt Nr 2 - Bryły Geometryczne
 
-## Bartosz Paczesny 72541
+## Bartłomiej Paczesny 72541
 
 ### 🎯 Opis Projektu
 
@@ -49,6 +49,6 @@ ProjektNr2Paczesny72541/
 
 ### 📞 Kontakt
 
-**Autor:** Bartosz Paczesny
+**Autor:** Bartłomiej Paczesny
 **Nr indeksu:** 72541
 **Przedmiot:** Programowanie Obiektowe

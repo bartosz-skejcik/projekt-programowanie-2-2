@@ -9,9 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f7a7f2d-683c-4d90-b01a-ddb6261d083d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjektNr2Paczesny72541/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/GeometricBlock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitIndividual.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitIndividual.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitIndividual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitIndividual.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjektNr2Paczesny72541/bpCockpitLaboratory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +27,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;bartosz-skejcik&quot;
+    &quot;assignee&quot;: &quot;Bartłomiej-skejcik&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/bartosz-skejcik/projekt-programowanie-2-2.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Bartłomiej-skejcik/projekt-programowanie-2-2.git&quot;,
     &quot;accountId&quot;: &quot;ee2a5569-ce94-480f-94e2-908a78679ddc&quot;
   }
 }</component>
@@ -109,6 +108,8 @@
       <workItem from="1749556553692" duration="781000" />
       <workItem from="1749557363087" duration="632000" />
       <workItem from="1749563245529" duration="847000" />
+      <workItem from="1749567676525" duration="526000" />
+      <workItem from="1749568296338" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="shit">
       <option name="closed" value="true" />
